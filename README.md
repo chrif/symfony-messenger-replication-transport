@@ -77,11 +77,13 @@ final class SlaveTransport implements SlaveTransportInterface
 
     public function slaveAck(MasterAfterAckEvent $event): void
     {
+        // find by replication_message_id and add TransportMessageIdStamp
         $this->transport->ack($event->masterEnvelope());
     }
 
     public function slaveReject(MasterAfterRejectEvent $event): void
     {
+        // find by replication_message_id and add TransportMessageIdStamp
         $this->transport->reject($event->masterEnvelope());
     }
 }
