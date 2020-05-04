@@ -2,7 +2,7 @@
 
 # Master/slave replication for Symfony Messenger transports
 
-## Example where all messages sent to the high_priority transport are duplicated
+## Example where all messages sent to the `high_priority` transport are replicated asynchronously on the `replication_destination` transport
 
 ### `messenger.yaml`
 ```yaml
