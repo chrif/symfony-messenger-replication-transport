@@ -1,0 +1,22 @@
+{
+  "name": "chrif/symfony-messenger-replication-transport",
+  "description": "Master/slave replication for Symfony Messenger transports",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Fecteau"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "symfony/messenger": "4.4.7",
+    "psr/container": "^1.0",
+    "ramsey/uuid": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Symfony\\Component\\Messenger\\Bridge\\Replication\\": "src"
+    }
+  }
+}
